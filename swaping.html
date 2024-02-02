@@ -1,0 +1,65 @@
+<script>
+
+    // Swaping
+
+    // 1. using 3 variable.
+    
+    console.log("using 3 variable.");
+    var a = parseInt(prompt("enter your A value => "));
+    console.log("A=>"+ a);
+    var b = parseInt(prompt("enter your B value => "));
+    console.log("B=>"+ b);
+    var c;
+    console.log("swaping using with thred variable...")
+
+    c=a;
+    a=b;
+    b=c;
+    console.log("a="+a+" b="+b);
+    
+     // 2.without 3 variable.
+    
+    console.log("without 3 variable.");
+    var a=parseInt(prompt("enter your A value => "));
+    console.log("A=>"+ a);
+    var b = parseInt(prompt("enter your B value => "));
+    console.log("B=>"+ b);
+
+    console.log("swaping using with out thred variable...")
+    a=a+b;
+    b=a-b;
+    a=a-b;
+
+    console.log("a="+a+" b="+b);
+
+
+    // 3.Distracting
+
+    console.log("3.Distracting");
+    var a=parseInt(prompt("enter your A value => "));
+    console.log("A=>"+ a);
+    var b = parseInt(prompt("enter your B value => "));
+    console.log("B=>"+ b);
+   
+    console.log("swaping using Distracting variable...");
+
+    [a , b]=[b , a];
+    ;
+    console.log("a="+a+" b="+b);
+
+    // 4.XOR
+
+    console.log("4.XOR");
+    var a=parseInt(prompt("enter your A value => "));
+    console.log("A=>"+ a);
+    var b = parseInt(prompt("enter your B value => "));
+    console.log("B=>"+ b);
+
+    console.log("swaping using XOR variable...")
+    a=a^b;
+    b=a^b;
+    a=a^b;
+
+    console.log("a="+a+" b="+b);
+
+</script>
